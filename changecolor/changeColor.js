@@ -4,11 +4,13 @@ var isPink = false;
 btn.addEventListener('click', function() {
 
     if (isPink) {
-        document.querySelector('body').style.background = 'blue';
-        isPink = false;
+        document.querySelector('body')
+            .style.background = 'white';
     }
     else {
-        document.querySelector('body').style.background = 'pink';
-        isPink = true;
+        document.querySelector('body')
+            .style.background = 'pink';
     }
+
+    isPink = !isPink;
 });
